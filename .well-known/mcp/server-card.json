@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/mcp-server-card/v1.json",
+  "version": "1.0",
+  "protocolVersion": "2026-07-28",
+  "serverInfo": {
+    "name": "kazejev-personal",
+    "version": "0.1.0"
+  },
+  "title": "Jaroslav Kazejev — personal MCP server",
+  "description": "Read-only MCP server exposing Jaroslav Kazejev's bio, skills, projects, and contact details to AI agents.",
+  "documentationUrl": "https://kazejev.com/",
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://mcp.kazejev.com/mcp"
+  },
+  "capabilities": {
+    "tools": {},
+    "resources": {}
+  },
+  "tools": [
+    { "name": "get_bio", "description": "Short professional biography." },
+    { "name": "list_skills", "description": "Technical and professional skills." },
+    { "name": "list_projects", "description": "Notable projects and work." },
+    { "name": "get_contact_info", "description": "Public contact details and profile links." }
+  ],
+  "resources": "dynamic"
+}
