@@ -7,7 +7,7 @@
     "version": "0.1.0"
   },
   "title": "Jaroslav Kazejev — personal MCP server",
-  "description": "Read-only MCP server exposing Jaroslav Kazejev's bio, skills, projects, and contact details to AI agents.",
+  "description": "This server is read-only. It gives the biography, the skills, the projects and the contact details of Jaroslav Kazejev to AI agents.",
   "documentationUrl": "https://kazejev.com/",
   "transport": {
     "type": "streamable-http",
@@ -18,10 +18,22 @@
     "resources": {}
   },
   "tools": [
-    { "name": "get_bio", "description": "Short professional biography." },
-    { "name": "list_skills", "description": "Technical and professional skills." },
-    { "name": "list_projects", "description": "Notable projects and work." },
-    { "name": "get_contact_info", "description": "Public contact details and profile links." }
+    {
+      "name": "get_bio",
+      "description": "The short professional biography of Jaroslav Kazejev."
+    },
+    {
+      "name": "get_contact_info",
+      "description": "The public contact details and the profile links."
+    },
+    {
+      "name": "list_projects",
+      "description": "The projects and the work."
+    },
+    {
+      "name": "list_skills",
+      "description": "The technical and professional skills."
+    }
   ],
   "resources": "dynamic"
 }
