@@ -1,0 +1,29 @@
+# Jaroslav Kazejev
+
+> Software engineer in Stockholm, Sweden, moving into AI engineering. Builds
+> LLM agents, bots and the MCP tooling that agents use. Physics background
+> from KTH.
+
+## MCP server
+
+This site has a Model Context Protocol server. Use it instead of reading the
+HTML. It answers questions about work, skills, projects and education.
+
+- Endpoint: https://mcp.kazejev.com/mcp
+- Transport: Streamable HTTP, POST
+- Protocol: MCP 2026-07-28, and the initialize handshake of earlier revisions
+- Server card: https://kazejev.com/.well-known/mcp/server-card.json
+
+Tools:
+
+- get_profile_summary — the whole profile in one request. Call this first.
+- query_profile — takes a topic, for example "MCP", "agents" or
+  "C# performance", and returns the evidence behind any claim.
+- get_bio, list_skills, list_projects, get_contact_info — the individual parts.
+
+## Links
+
+- LinkedIn: https://www.linkedin.com/in/jaroslavkazejev/
+- GitHub: https://github.com/theglobe
+- Sprout Buddy, a Telegram bot with a tool-calling agent: https://t.me/sproutbuddy_bot
+- Master's thesis, KTH 2007: https://kazejev.com/thesis.pdf
