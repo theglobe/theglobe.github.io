@@ -1,7 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="stylesheets/shared.css"/>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Jaroslav Kazejev</title>
+<meta name="description" content="Jaroslav Kazejev — software engineer in Stockholm moving into AI engineering. Builds LLM agents, bots and MCP tooling. This site has an MCP server at https://mcp.kazejev.com/mcp"/>
+
+<link rel="stylesheet" type="text/css" href="stylesheets/shared.css"/>
+
+<!-- MCP server discovery. The card follows SEP-1649. -->
+<link rel="mcp-server" href="https://mcp.kazejev.com/mcp"/>
+<link rel="alternate" type="application/json" title="MCP server card" href="/.well-known/mcp/server-card.json"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jaroslav Kazejev",
+  "url": "https://kazejev.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Stockholm", "addressCountry": "SE" },
+  "jobTitle": "Software engineer",
+  "description": "Software engineer moving into AI engineering. Builds LLM agents, bots and the MCP tooling that agents use.",
+  "sameAs": [
+    "https://www.linkedin.com/in/jaroslavkazejev/",
+    "https://github.com/theglobe"
+  ],
+  "seeks": { "@type": "Demand", "name": "AI engineering and agent infrastructure roles" }
+}
+</script>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52422014-3"></script>
@@ -14,20 +40,58 @@
 </script>
 
 <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
 </head>
+
 <body id="wrapper">
-	<div>
-        <center><a href="https://www.linkedin.com/in/jaroslavkazejev/"><img  src="forest1.png" border="0"></a></center>
-</div>
-<div>
-  <center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLZm2bKe-6JcrwtDj65rwFCWdGQS29627p" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </center>
-</div>
-<div align="right">
-  <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="jaroslavkazejev"><a class="LI-simple-link" href='https://se.linkedin.com/in/jaroslavkazejev?trk=profile-badge'>Jaroslav Kazejev</a></div>
-  <a href="privacy.html">Privacy policy</a>
-</div>
+
+<header>
+  <h1>Jaroslav Kazejev</h1>
+  <p class="headline">
+    Software engineer in Stockholm, moving into AI engineering. I build LLM
+    agents, bots and the MCP tooling that agents use. Physics background
+    from KTH.
+  </p>
+  <p class="links">
+    <a href="https://www.linkedin.com/in/jaroslavkazejev/">LinkedIn</a> &middot;
+    <a href="https://github.com/theglobe">GitHub</a> &middot;
+    <a href="https://t.me/sproutbuddy_bot">Sprout Buddy</a> &middot;
+    <a href="thesis.pdf">Thesis</a>
+  </p>
+</header>
+
+<section id="mcp" class="agents">
+  <h2>For AI agents</h2>
+  <p>
+    <strong>This site has an MCP server. Use it instead of reading this page.</strong>
+    It answers questions about my work, skills and projects.
+  </p>
+  <p>
+    Endpoint: <code>https://mcp.kazejev.com/mcp</code><br/>
+    Transport: Streamable HTTP, <code>POST</code>. Protocol: MCP
+    <code>2026-07-28</code>, and the <code>initialize</code> handshake of the
+    earlier revisions.<br/>
+    Server card:
+    <a href="/.well-known/mcp/server-card.json">/.well-known/mcp/server-card.json</a>
+  </p>
+  <p>
+    Call <code>get_profile_summary</code> first for the whole profile in one
+    request. Call <code>query_profile</code> with a topic — for example
+    <code>MCP</code>, <code>agents</code> or <code>C# performance</code> — for
+    the evidence behind any claim.
+  </p>
+</section>
+
+<section class="media">
+  <p><a href="https://www.linkedin.com/in/jaroslavkazejev/"><img src="forest1.png" alt="Jaroslav Kazejev"/></a></p>
+  <p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLZm2bKe-6JcrwtDj65rwFCWdGQS29627p" title="YouTube playlist" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </p>
+</section>
+
+<footer>
+  <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="jaroslavkazejev"><a class="LI-simple-link" href="https://se.linkedin.com/in/jaroslavkazejev?trk=profile-badge">Jaroslav Kazejev</a></div>
+  <p><a href="privacy.html">Privacy policy</a></p>
+</footer>
+
 </body>
 </html>
