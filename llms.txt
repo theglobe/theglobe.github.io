@@ -21,6 +21,11 @@ Tools it provides:
   education
 - get_bio, list_skills, list_projects, get_contact_info — the individual parts
 
+## Resume
+
+A machine-readable resume in JSON Resume format is at
+https://kazejev.com/resume.json
+
 ## Links
 
 - LinkedIn: https://www.linkedin.com/in/jaroslavkazejev/

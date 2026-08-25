@@ -1,0 +1,90 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Jaroslav Kazejev",
+    "label": "Software engineer moving into AI engineering",
+    "url": "https://kazejev.com",
+    "summary": "Software engineer in Stockholm, Sweden. Background in C# and .NET, Java on Android, Python and shell scripting, with a master's degree in physics from KTH. Now works on the layer between models and the systems they operate on: LLM agents, tool calling, agent memory and the MCP tooling that agents consume.",
+    "location": {
+      "city": "Stockholm",
+      "countryCode": "SE"
+    },
+    "profiles": [
+      { "network": "LinkedIn", "username": "jaroslavkazejev", "url": "https://www.linkedin.com/in/jaroslavkazejev/" },
+      { "network": "GitHub", "username": "theglobe", "url": "https://github.com/theglobe" }
+    ]
+  },
+  "education": [
+    {
+      "institution": "KTH Royal Institute of Technology",
+      "url": "https://www.kth.se/",
+      "area": "Physics",
+      "studyType": "Master's degree",
+      "endDate": "2007",
+      "courses": [
+        "Thesis: Studies of Neutron Backgrounds for PoGOLite, a Balloon-borne Gamma-ray Polarimeter (TRITA-FYS-2007:62)"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "AI engineering",
+      "keywords": [
+        "LLM agents", "Tool calling", "Model Context Protocol (MCP)",
+        "Agent tooling and tool design", "Agent memory", "Conversational bots",
+        "AI coding agents"
+      ]
+    },
+    {
+      "name": "Languages and platforms",
+      "keywords": ["C#", ".NET", "TypeScript", "Node", "Python", "Java", "Android", "Shell scripting"]
+    },
+    {
+      "name": "Infrastructure",
+      "keywords": ["Cloudflare Workers", "Fly.io", "PostgreSQL", "Docker", "GitHub Actions"]
+    },
+    {
+      "name": "Other",
+      "keywords": ["SIMD and vectorisation", "Applied cryptography", "Numerical methods"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Sprout Buddy",
+      "startDate": "2026",
+      "description": "A Telegram bot that looks after a person's houseplants through ordinary conversation. A tool-calling LLM agent with fifteen tools, per-user memory that survives between conversations, and a background loop that sends due reminders without a prompt. Reminders keep the user's home local time through a daylight-saving change, and an occurrence missed during a deploy is skipped rather than replayed.",
+      "url": "https://t.me/sproutbuddy_bot",
+      "keywords": ["LLM agent", "Tool calling", "TypeScript", "Express", "Zod", "PostgreSQL", "Neon", "Fly.io", "Telegram"],
+      "roles": ["Author"]
+    },
+    {
+      "name": "profile-mcp",
+      "startDate": "2026",
+      "description": "A dependency-free Model Context Protocol server on Cloudflare Workers that makes this profile readable by AI agents. The MCP 2026-07-28 revision removed the initialize handshake and protocol-level sessions; this server supports that revision and the earlier handshake-based ones on one endpoint, selecting the era per request. It implements server/discover, per-request _meta, mirrored header validation with the base64 sentinel format, and cache fields on list results. The site publishes a SEP-1649 server card for discovery.",
+      "url": "https://github.com/theglobe/profile-mcp",
+      "keywords": ["MCP", "Agent tooling", "TypeScript", "Cloudflare Workers", "Protocol implementation"],
+      "roles": ["Author"]
+    },
+    {
+      "name": "MandelbrotSIMD",
+      "startDate": "2024",
+      "description": "A fast Mandelbrot generator in C# that reaches the SSE and AVX instructions of the processor through System.Numerics.Vectors, together with multiprocessing. One code path serves each SIMD level.",
+      "url": "https://github.com/theglobe/MandelbrotSIMD",
+      "keywords": ["C#", ".NET", "SIMD", "Performance"],
+      "roles": ["Author"]
+    },
+    {
+      "name": "cryptopals-challenges",
+      "startDate": "2025",
+      "description": "Solutions to the Cryptopals cryptographic challenges, a sequence of attacks on real cryptographic errors.",
+      "url": "https://github.com/theglobe/cryptopals-challenges",
+      "keywords": ["Cryptography", "Security", "Algorithms"],
+      "roles": ["Author"]
+    }
+  ],
+  "meta": {
+    "canonical": "https://kazejev.com/resume.json",
+    "version": "1.0.0",
+    "note": "Employment history is not listed here. See LinkedIn."
+  }
+}
