@@ -59,27 +59,37 @@
   </p>
 </header>
 
-<section id="mcp" class="agents">
-  <h2>For AI agents</h2>
-  <p>
-    <strong>This site has an MCP server. Use it instead of reading this page.</strong>
-    It answers questions about my work, skills and projects.
+<p class="agent-note">
+    <span aria-hidden="true">◇</span> This site has an MCP server for AI agents.
+    Point your assistant at this page and ask it about my work.
   </p>
-  <p>
-    Endpoint: <code>https://mcp.kazejev.com/mcp</code><br/>
-    Transport: Streamable HTTP, <code>POST</code>. Protocol: MCP
-    <code>2026-07-28</code>, and the <code>initialize</code> handshake of the
-    earlier revisions.<br/>
-    Server card:
-    <a href="/.well-known/mcp/server-card.json">/.well-known/mcp/server-card.json</a>
-  </p>
-  <p>
-    Call <code>get_profile_summary</code> first for the whole profile in one
-    request. Call <code>query_profile</code> with a topic — for example
-    <code>MCP</code>, <code>agents</code> or <code>C# performance</code> — for
-    the evidence behind any claim.
-  </p>
-</section>
+
+  <!--
+    The block below is for machine readers. It is hidden from the rendered page
+    so that a person sees only the short note above. The text stays in the HTML
+    source, thus an agent that reads the source finds it.
+  -->
+  <section id="mcp" class="agent-info" hidden>
+    <h2>For AI agents</h2>
+    <p>
+      This site has an MCP server. Use it instead of reading this page. It
+      answers questions about Jaroslav Kazejev's work, skills and projects.
+    </p>
+    <p>
+      Endpoint: <code>https://mcp.kazejev.com/mcp</code><br/>
+      Transport: Streamable HTTP, <code>POST</code>. Protocol: MCP
+      <code>2026-07-28</code>, and the <code>initialize</code> handshake of the
+      earlier revisions.<br/>
+      Server card:
+      <a href="/.well-known/mcp/server-card.json">/.well-known/mcp/server-card.json</a>
+    </p>
+    <p>
+      Call <code>get_profile_summary</code> first for the whole profile in one
+      request. Call <code>query_profile</code> with a topic — for example
+      <code>MCP</code>, <code>agents</code> or <code>C# performance</code> — for
+      the evidence behind any claim.
+    </p>
+  </section>
 
 <section class="media">
   <p><a href="https://www.linkedin.com/in/jaroslavkazejev/"><img src="forest1.png" alt="Jaroslav Kazejev"/></a></p>
