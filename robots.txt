@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# This site has an MCP server for AI agents.
+# This site publishes an MCP server.
 # Endpoint: https://mcp.kazejev.com/mcp
 # Details:  https://kazejev.com/llms.txt
 # Card:     https://kazejev.com/.well-known/mcp/server-card.json
