@@ -4,10 +4,10 @@
   "protocolVersion": "2026-07-28",
   "serverInfo": {
     "name": "kazejev-personal",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "title": "Jaroslav Kazejev — personal MCP server",
-  "description": "This server is read-only. It gives the professional profile of Jaroslav Kazejev, a software engineer who moves into AI engineering.",
+  "description": "This server is read-only. It gives the professional profile of Jaroslav Kazejev, a software engineer who moves into AI engineering and who builds LLM agents, bots and MCP tooling.",
   "documentationUrl": "https://kazejev.com/",
   "transport": {
     "type": "streamable-http",
