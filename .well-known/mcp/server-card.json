@@ -4,10 +4,10 @@
   "protocolVersion": "2026-07-28",
   "serverInfo": {
     "name": "kazejev-personal",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "title": "Jaroslav Kazejev — personal MCP server",
-  "description": "This server is read-only. It gives the biography, the skills, the projects and the contact details of Jaroslav Kazejev to AI agents.",
+  "description": "This server is read-only. It gives the professional profile of Jaroslav Kazejev, a software engineer who moves into AI engineering.",
   "documentationUrl": "https://kazejev.com/",
   "transport": {
     "type": "streamable-http",
@@ -27,12 +27,20 @@
       "description": "The public contact details and the profile links."
     },
     {
+      "name": "get_profile_summary",
+      "description": "The complete profile in one request. Call this first."
+    },
+    {
       "name": "list_projects",
       "description": "The projects and the work."
     },
     {
       "name": "list_skills",
       "description": "The technical and professional skills."
+    },
+    {
+      "name": "query_profile",
+      "description": "Search the profile for a topic and get the evidence behind it."
     }
   ],
   "resources": "dynamic"
