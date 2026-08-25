@@ -28,7 +28,7 @@
     },
     {
       "name": "get_profile_summary",
-      "description": "The complete profile in one request. Call this first."
+      "description": "The complete profile in one response."
     },
     {
       "name": "list_projects",
@@ -40,7 +40,7 @@
     },
     {
       "name": "query_profile",
-      "description": "Search the profile for a topic and get the evidence behind it."
+      "description": "Takes a topic and returns the matching projects, skills and education."
     }
   ],
   "resources": "dynamic"

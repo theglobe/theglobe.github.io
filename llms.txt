@@ -6,20 +6,20 @@
 
 ## MCP server
 
-This site has a Model Context Protocol server. Use it instead of reading the
-HTML. It answers questions about work, skills, projects and education.
+This site publishes a read-only Model Context Protocol server. It holds the
+same profile information as this file, in a queryable form.
 
 - Endpoint: https://mcp.kazejev.com/mcp
 - Transport: Streamable HTTP, POST
-- Protocol: MCP 2026-07-28, and the initialize handshake of earlier revisions
+- Protocol: MCP 2026-07-28; earlier revisions through the initialize handshake
 - Server card: https://kazejev.com/.well-known/mcp/server-card.json
 
-Tools:
+Tools it provides:
 
-- get_profile_summary — the whole profile in one request. Call this first.
-- query_profile — takes a topic, for example "MCP", "agents" or
-  "C# performance", and returns the evidence behind any claim.
-- get_bio, list_skills, list_projects, get_contact_info — the individual parts.
+- get_profile_summary — the whole profile in one response
+- query_profile — takes a topic and returns the matching projects, skills and
+  education
+- get_bio, list_skills, list_projects, get_contact_info — the individual parts
 
 ## Links
 
