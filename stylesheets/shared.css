@@ -33,13 +33,16 @@ code {
   border-radius: 3px;
 }
 
-.agents {
-  border: 1px solid #cfcfcf;
-  border-left: 4px solid #1a1a1a;
-  padding: 1rem 1.25rem;
+.agent-note {
+  font-size: .85rem;
+  color: #666;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: .6rem 0;
   margin-bottom: 2rem;
-  background: #fafafa;
 }
+
+[hidden] { display: none; }
 
 .media { margin-bottom: 2rem; }
 .media img { max-width: 100%; height: auto; }
@@ -51,6 +54,6 @@ footer { border-top: 1px solid #e5e5e5; padding-top: 1rem; }
   body { color: #e8e8e8; background: #141414; }
   a { color: #7cb0ff; }
   code { background: #2a2a2a; }
-  .agents { background: #1c1c1c; border-color: #3a3a3a; border-left-color: #e8e8e8; }
+  .agent-note { color: #9a9a9a; border-color: #333; }
   footer { border-top-color: #333; }
 }
