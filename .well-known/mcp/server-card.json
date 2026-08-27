@@ -3,8 +3,8 @@
   "version": "1.0",
   "protocolVersion": "2026-07-28",
   "serverInfo": {
-    "name": "kazejev-personal",
-    "version": "0.3.0"
+    "name": "jaroslavkazejev-profile",
+    "version": "0.3.1"
   },
   "title": "Jaroslav Kazejev — personal MCP server",
   "description": "This server is read-only. It gives the professional profile of Jaroslav Kazejev, a software engineer who moves into AI engineering and who builds LLM agents, bots and MCP tooling.",
